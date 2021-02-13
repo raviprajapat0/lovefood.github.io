@@ -1,0 +1,226 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* utility class */
+.h-primary{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 12px;
+    color: black;
+}
+.p-primary{
+    text-align: center;
+    font-size: 1rem;
+    font-style: bold;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+
+}
+
+/* css variables  */
+:root{
+    --navbar-height:60px;
+}
+header{
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+/* Navigation bar  */
+#navbar{
+    display: flex;
+    /* border: solid blue; */
+    /* position: sticky; */
+    align-items: center;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(5, 4, 4);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    z-index: -1;
+}
+/* Navigation bar : logo and images and list and register  */
+#logo img{
+    /* border:solid red; */
+    height: 50px;
+    margin: 5px;
+}
+#navbar ul{
+    /* border: solid red; */
+    display: flex;
+
+    
+}
+#navbar ul li{
+    display: flex;
+    /* border: 1px solid orange; */
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    margin: 10px;
+    
+}
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: rgb(206, 219, 219);
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color:white;
+    
+ }
+
+ /* #register button{
+    display: flex;
+    position: relative;
+    top: 25px;
+    left: 300px; 
+    color: black;
+    background-color: rgb(166, 188, 248);
+    border-radius: 20px;
+    padding: 2px 4px;
+}
+#register a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+#register button:hover , a:hover{
+    background-color: rgb(203, 204, 211);
+    border: 20px;
+    cursor:pointer;
+} */
+
+ /* home section */
+
+#home {
+/* border: solid red; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px 100px;
+height: 300px;
+}
+#home::before{
+    content: "";
+    background: url(/img/home.jpg) no-repeat center center/cover ;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    z-index: -1;
+}
+.btn{
+margin-top: 10px;
+padding: 5px 8px;
+font-size: 1em;
+border: 2px solid white;
+background-color: rgb(15, 167, 40);
+color: white;
+cursor: pointer;
+}    
+.btn:hover{
+    background-color: rgb(6, 180, 30);
+    color: black;
+}                        
+
+/* services section  */
+
+#services{
+    /* border:15px solid blue; */
+    background-color: #ecf19a;   
+    height: 450px;
+    padding-top: 30px;
+    
+}
+.services{
+    display: flex;
+    margin: 25px;
+    color: white;
+    justify-content: center;
+}
+.services .box{
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    padding: 6px;
+    margin: 6px 10px;
+    height: 260px;
+    background-color:#dae07d;
+    
+}
+.services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    
+}
+#contact{
+    position: relative;
+    height: 450px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(228, 241, 167);
+    z-index: -1;
+    opacity: 1;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: .7rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+footer{
+    display: flex;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
