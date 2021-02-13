@@ -126,7 +126,7 @@ height: 300px;
 }
 #home::before{
     content: "";
-    background: url(/img/home.jpg) no-repeat center center/cover ;
+    background: url("img/home.jpg") no-repeat center center/cover ;
     background-color: red;
     position: absolute;
     top: 0px;
